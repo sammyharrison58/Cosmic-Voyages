@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Voyages - Mission Stats</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Graph Styles */
+        .graph-container {
+            background: #222;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .bar-group {
+            margin-bottom: 15px;
+        }
+
+        .bar-label {
+            display: inline-block;
+            width: 100px;
+        }
+
+        .bar-bg {
+            display: inline-block;
+            width: calc(100% - 120px);
+            background: #444;
+            height: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            vertical-align: middle;
+        }
+
+        .bar-fill {
+            height: 100%;
+            background: var(--accent-color);
+            width: 0;
+            transition: width 1s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="stats.html">Mission Stats</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html">Book a Trip</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Cosmic Log</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="text-center mt-2">Mission Statistics</h1>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="assets/mars_landscape_1764920351000.png" alt="Mars Landscape">
+                <p>The Red Sands of Mars</p>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/colorful_nebula_1764920374843.png" alt="Nebula">
+                <p>Orion Nebula View</p>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/spaceship_interior_1764920390955.png" alt="Spaceship Interior">
+                <p>First Class Lounge</p>
+            </div>
+        </div>
+
+
+        <h2>Planetary Data</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Planet/Moon</th>
+                    <th colspan="2">Distance from Earth</th>
+                    <th rowspan="2">Travel Time</th>
+                </tr>
+                <tr>
+                    <th>Min (Million km)</th>
+                    <th>Max (Million km)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mars</td>
+                    <td>54.6</td>
+                    <td>401</td>
+                    <td>6 Months</td>
+                </tr>
+                <tr>
+                    <td>Europa (Jupiter)</td>
+                    <td colspan="2" class="text-center">~628 (Avg)</td>
+                    <td>18 Months</td>
+                </tr>
+                <tr>
+                    <td>Titan (Saturn)</td>
+                    <td>1,200</td>
+                    <td>1,600</td>
+                    <td>2 Years</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <h2>Mission Costs</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Package</th>
+                    <th>Features</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Economy</td>
+                    <td>Shared Cabin, Standard Meals</td>
+                    <td>$500,000</td>
+                </tr>
+                <tr>
+                    <td>Business</td>
+                    <td>Private Cabin, Gourmet Meals</td>
+                    <td>$1,200,000</td>
+                </tr>
+                <tr>
+                    <td>First Class</td>
+                    <td>Zero-G Suite, Personal Butler</td>
+                    <td>$5,000,000</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <h2>Popularity Index</h2>
+        <div class="graph-container">
+            <div class="bar-group">
+                <span class="bar-label">Mars</span>
+                <div class="bar-bg">
+                    <div class="bar-fill" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="bar-group">
+                <span class="bar-label">Europa</span>
+                <div class="bar-bg">
+                    <div class="bar-fill" style="width: 60%;"></div>
+                </div>
+            </div>
+            <div class="bar-group">
+                <span class="bar-label">Titan</span>
+                <div class="bar-bg">
+                    <div class="bar-fill" style="width: 45%;"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="contacts">
+            <div class="text-[#637588]" data-icon="FacebookLogo" data-size="24px" data-weight="regular"> </div>
+            <i class="fa-regular fa-envelope"><a href="#">admin@sammyharrison58@gmail.com</a></i><br>
+            <i class="fa-solid fa-phone"><a href="#">+(254)748082906</a></i><br>
+            <i class="fa-solid fa-s"><a href="#">live:Noblesse </a></i> <br>
+            <i class="fa-brands fa-twitter"><a href="#">@Father_Looks</a></i>
+            <i class="fa-solid fa-gear"><a href="">Harris Apex.com</a></i>
+        </div>
+        <div class="down">
+            <a href="#">WWW.Father_LooksThemes.com</a>
+        </div>
+        <div class="line">
+            <hr>
+        </div>
+
+        <p>&copy; 2025 Cosmic Voyages. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

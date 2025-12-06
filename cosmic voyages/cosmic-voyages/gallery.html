@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Voyages - Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            background: #222;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.03);
+        }
+
+        .media-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #1a1a1a;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="stats.html">Mission Stats</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html">Book a Trip</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Cosmic Log</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="text-center mt-2">Galactic Gallery</h1>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="assets/mars_landscape_1764920351000.png" alt="Mars Landscape">
+                <p>The Red Sands of Mars</p>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/colorful_nebula_1764920374843.png" alt="Nebula">
+                <p>Orion Nebula View</p>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/spaceship_interior_1764920390955.png" alt="Spaceship Interior">
+                <p>First Class Lounge</p>
+            </div>
+        </div>
+
+        <div class="media-section text-center">
+            <h2>Experience the Sounds & Sights</h2>
+
+            <div style="margin: 20px 0;">
+                <h3>Life on Board (Video)</h3>
+                <video controls width="600">
+                    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p><em>(Sample video for demonstration)</em></p>
+            </div>
+
+            <div style="margin: 20px 0;">
+                <h3>Engine Rumble (Audio)</h3>
+                <audio controls>
+                    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+                        type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p><em>(Sample audio for demonstration)</em></p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="contacts">
+            <div class="text-[#637588]" data-icon="FacebookLogo" data-size="24px" data-weight="regular"> </div>
+            <i class="fa-regular fa-envelope"><a href="#">admin@sammyharrison58@gmail.com</a></i><br>
+            <i class="fa-solid fa-phone"><a href="#">+(254)748082906</a></i><br>
+            <i class="fa-solid fa-s"><a href="#">live:Noblesse </a></i> <br>
+            <i class="fa-brands fa-twitter"><a href="#">@Father_Looks</a></i>
+            <i class="fa-solid fa-gear"><a href="">Harris Apex.com</a></i>
+        </div>
+        <div class="down">
+            <a href="#">WWW.Father_LooksThemes.com</a>
+        </div>
+        <div class="line">
+            <hr>
+        </div>
+
+        <p>&copy; 2025 Cosmic Voyages. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
